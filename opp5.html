@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+alder = parseInt(prompt("Skriv inn din alder:"));
+pris = 0;
+if (alder < 9) {
+  pris = 0;
+} else if (alder >= 9 && alder <= 17) {
+  pris = 20;
+} else if (alder >= 18 && alder <= 65) {
+  pris = 40;
+} else {
+  pris = 20;
+}
+console.log("Prisen på bussbilletten er " + pris + " kr.");
+    </script>
+</body>
+</html>
