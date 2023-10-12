@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+liste = ["I", "dag", "er", "jeg", "så'", "lykkelig", "så", "lykkelig", "så", "lykkelig", "det", "hele", 
+"endte", "c,41,eilS", "jeg", "synger", "og", "er", "glad", "Ja", "S", "endte", "I 1(13a", "så", 
+"I IdS", "så", "I la", "i", "dag", "er", "jeg", "så", "lykkelig", "som", "dagen", "den", 
+"er", "lang"];
+
+antallOrd = liste.length;
+console.log("Antall ord i listen er: " + antallOrd);
+
+tellerSo = 0;
+tellerLykkelig = 0;
+tellerDag = 0;
+
+for (let ord of liste) {
+  if (ord === "så") {
+    tellerSo++;
+  } else if (ord === "lykkelig") {
+    tellerLykkelig++;
+  } else if (ord === "dag") {
+    tellerDag++;
+  }
+}
+
+console.log("Antall 'så' i listen er: " + tellerSo);
+console.log("Antall 'lykkelig' i listen er: " + tellerLykkelig);
+console.log("Antall 'dag' i listen er: " + tellerDag);
+
+ordbok = {
+  "så": tellerSo,
+  "lykkelig": tellerLykkelig,
+  "dag": tellerDag
+};
+
+console.log("Ordbok med antall forekomster:");
+console.log(ordbok);
+
+    </script>
+</body>
+</html>
