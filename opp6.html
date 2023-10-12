@@ -8,13 +8,29 @@
 <body>
     <script>
 poeng = 0;
-svar = prompt("Hva er hovedstaden i Frankrike?");
-if (svar.toLowerCase() === "paris") {
+svar1 = prompt("Hva er hovedstaden i Frankrike?");
+if (svar1.toLowerCase() === "paris") {
   poeng++;
-  console.log("Riktig svar! Du har nå " + poeng + " poeng.");
+  console.log("Riktig svar på spørsmål 1!");
 } else {
-  console.log("Feil svar. Du har fortsatt " + poeng + " poeng.");
+  console.log("Feil svar på spørsmål 1.");
 }
+svar2 = prompt("Hva er verdens største hav?");
+if (svar2.toLowerCase() === "stillehavet") {
+  poeng++;
+  console.log("Riktig svar på spørsmål 2!");
+} else {
+  console.log("Feil svar på spørsmål 2.");
+}
+svar3 = prompt("Hvem skrev 'Romeo og Julie'?");
+if (svar3.toLowerCase() === "shakespeare") {
+  poeng++;
+  console.log("Riktig svar på spørsmål 3!");
+} else {
+  console.log("Feil svar på spørsmål 3.");
+}
+console.log("Du fikk " + poeng + " av 3 poeng.");
+
     </script>
 </body>
 </html>
